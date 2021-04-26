@@ -1,0 +1,87 @@
+@import "./variable";
+@import "./reset.scss";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Noto Sans Japanese", sans-serif;
+  color: hsl(0, 10%, 30%);
+}
+
+header {
+  height: 3rem;
+  background: linear-gradient(hsl(49, 100%, 60%), hsl(49, 100%, 50%));
+  ul {
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    li {
+      &:first-of-type {
+        margin-right: auto;
+        padding: 0.1rem 0 0 0;
+      }
+      &.logo {
+        img {
+          width: 10rem;
+          height: 2.9rem;
+          //   background-color: black;
+        }
+      }
+    }
+  }
+}
+
+main {
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 8px;
+  box-shadow: 5px 5px 10px #ccc, -5px 5px 10px #ccc;
+}
+
+.card {
+  margin-bottom: 2rem;
+  border: 2px solid hsl(34, 57%, 50%);
+  border-radius: 8px;
+  .header {
+    display: flex;
+    font-size: 1.4rem;
+    color: white;
+    background: hsl(34, 57%, 50%);
+    * {
+      padding: 0 4px;
+    }
+  }
+  .date {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .detail {
+    padding-left: 1rem;
+    .datetime {
+    }
+    .place {
+      margin-bottom: 1rem;
+    }
+    .description {
+      color: hsl(0, 5%, 50%);
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    ul {
+      padding: 0;
+    }
+  }
+  main {
+    width: 100%;
+  }
+}
