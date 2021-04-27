@@ -99,7 +99,7 @@ main {
 }
 
 .card .detail {
-  padding-left: 1rem;
+  padding: 0 1.2rem;
 }
 
 .card .detail .place {
