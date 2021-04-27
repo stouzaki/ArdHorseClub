@@ -1,6 +1,6 @@
 /** 初期表示*/
 $(function () {
-    setNo();
+    getSchedulePage(2021);
 });
 
 
@@ -12,4 +12,22 @@ function setNo() {
         $(elemNos[index]).html(`No.${no}`);
         index++;
     }
+}
+
+/** スケジュールページを取得 */
+function getSchedulePage(year) {
+    $.ajax({
+        type: 'GET',
+        url: `./page/schedule/${year}.html`,
+        dataType: 'html',
+        success: function (data) {
+            let $main = $('#main');
+            $main.html("");
+            $('#main').append(data);
+            setNo();
+        },
+        error: function () {
+            alert('問題がありました。');
+        }
+    });
 }

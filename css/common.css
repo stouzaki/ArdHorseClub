@@ -83,9 +83,12 @@ main {
   -webkit-box-shadow: 0 0 0 1px #c88937;
           box-shadow: 0 0 0 1px #c88937;
   border-radius: 4px 4px 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.card .header * {
+.card .header > * {
   padding: 0 4px;
 }
 
