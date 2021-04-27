@@ -80,6 +80,9 @@ main {
   font-size: 1.4rem;
   color: white;
   background: #c88937;
+  -webkit-box-shadow: 0 0 0 1px #c88937;
+          box-shadow: 0 0 0 1px #c88937;
+  border-radius: 4px 4px 0 0;
 }
 
 .card .header * {
