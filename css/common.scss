@@ -77,6 +77,42 @@ main {
   }
 }
 
+.selectBox {
+  // margin: 1em auto;
+  position: relative;
+  select {
+    appearance: none;
+    // width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+    box-sizing: border-box;
+    font-size: 1em;
+    border: #ccc 1px solid;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    // margin-right: -2rem;
+    &:hover {
+      box-shadow: 0 0 0 1px hsl(200, 50%, 50%);
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px hsl(200, 50%, 50%);
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 20%;
+    top: 35%;
+    border-bottom: #333 2px solid;
+    border-right: #333 2px solid;
+    transform: rotate(45deg) translateY(-30%);
+  }
+}
+
 @media screen and (max-width: 768px) {
   header {
     ul {
