@@ -67,11 +67,20 @@ main {
   .detail {
     padding: 0 1.2rem;
     .place {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
     .description {
       color: hsl(0, 10%, 40%);
       padding-bottom: 1rem;
+      font-size: 0.9rem;
+      ul {
+        h4 {
+          border-bottom: 1px solid #ccc;
+          &:not(:first-of-type) {
+            margin-top: 0.8rem;
+          }
+        }
+      }
     }
   }
 }

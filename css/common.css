@@ -103,12 +103,21 @@ main {
 }
 
 .card .detail .place {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .card .detail .description {
   color: #705c5c;
   padding-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.card .detail .description ul h4 {
+  border-bottom: 1px solid #ccc;
+}
+
+.card .detail .description ul h4:not(:first-of-type) {
+  margin-top: 0.8rem;
 }
 
 .selectBox {
