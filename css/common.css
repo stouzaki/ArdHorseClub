@@ -6,7 +6,7 @@
   padding: 0;
   border: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
@@ -29,13 +29,7 @@ body {
 
 header {
   height: 3rem;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ffda33),
-    to(#ffd000)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffda33), to(#ffd000));
   background: linear-gradient(#ffda33, #ffd000);
 }
 
@@ -47,11 +41,11 @@ header ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 header ul li:first-of-type {
@@ -70,7 +64,7 @@ main {
   margin: 0 auto;
   padding: 8px;
   -webkit-box-shadow: 5px 5px 10px #ccc, -5px 5px 10px #ccc;
-  box-shadow: 5px 5px 10px #ccc, -5px 5px 10px #ccc;
+          box-shadow: 5px 5px 10px #ccc, -5px 5px 10px #ccc;
 }
 
 .card {
@@ -87,11 +81,11 @@ main {
   color: white;
   background: #c88937;
   -webkit-box-shadow: 0 0 0 1px #c88937;
-  box-shadow: 0 0 0 1px #c88937;
+          box-shadow: 0 0 0 1px #c88937;
   border-radius: 4px 4px 0 0;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card .header > * {
@@ -132,11 +126,11 @@ main {
 
 .selectBox select {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 0.5rem 2.5rem 0.5rem 1.5rem;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 1em;
   border: #ccc 1px solid;
   border-radius: 8px;
@@ -146,13 +140,13 @@ main {
 
 .selectBox select:hover {
   -webkit-box-shadow: 0 0 0 1px #4095bf;
-  box-shadow: 0 0 0 1px #4095bf;
+          box-shadow: 0 0 0 1px #4095bf;
 }
 
 .selectBox select:focus {
   outline: none;
   -webkit-box-shadow: 0 0 0 1px #4095bf;
-  box-shadow: 0 0 0 1px #4095bf;
+          box-shadow: 0 0 0 1px #4095bf;
 }
 
 .selectBox::after {
@@ -166,7 +160,7 @@ main {
   border-bottom: #333 2px solid;
   border-right: #333 2px solid;
   -webkit-transform: rotate(45deg) translateY(-30%);
-  transform: rotate(45deg) translateY(-30%);
+          transform: rotate(45deg) translateY(-30%);
 }
 
 @media screen and (max-width: 768px) {
