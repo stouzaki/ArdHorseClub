@@ -1,0 +1,15 @@
+{
+  "name": "ARD競馬部",
+  "short_name": "ARD競馬部",
+  "icons": [
+    {
+      "src": "/img/favicon.png",
+      "sizes": "61x56",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html?utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF"
+}
