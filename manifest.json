@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/ArdHorseClub/index.html?utm_source=homescreen",
+  "start_url": "https://stouzaki.github.io/ArdHorseClub/index.html?utm_source=homescreen",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#FFFFFF"
