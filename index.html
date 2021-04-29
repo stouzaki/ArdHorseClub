@@ -4,17 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- iOS用PWA設定 -->
-    <!-- アドレスバー等のブラウザのUIを非表示 -->
+    <!-- start iOS用PWA設定 -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <!-- ホーム画面に表示されるアプリ名 -->
     <meta name="apple-mobile-web-app-title" content="ARD競馬" />
-    <!-- Android用PWA設定-->
-    <!-- ウェブアプリマニフェストの読み込み -->
-    <link rel="manifest" href="manifest.json?v=1" />
-    <!-- ServiceWorkerの登録 -->
+    <!-- end iOS用PWA設定 -->
+    <!-- start Android用PWA設定-->
+    <link rel="manifest" href="manifest.json" />
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("sw.js").then((reg) => {
@@ -22,6 +18,9 @@
         });
       }
     </script>
+    <!-- end Android用PWA設定-->
+    <!-- Android用タブの色 -->
+    <meta name="theme-color" content="#FFD51B" />
 
     <title>アード・ソシヨ競馬部-Top</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
@@ -29,8 +28,8 @@
     <link
       rel="icon"
       type="image/png"
-      href="./img/favicon.png"
-      sizes="192x192"
+      href="./apple-touch-icon.png"
+      sizes="144x144"
     />
     <link rel="stylesheet" href="./css/common.css?v=1" />
     <script
