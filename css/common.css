@@ -112,12 +112,29 @@ main {
   font-size: 0.9rem;
 }
 
+.card .detail .description ul h3 {
+  background-color: #e6cfb3;
+  padding-left: 0.5rem;
+}
+
+.card .detail .description ul h3:not(:first-of-type) {
+  margin-top: 0.8rem;
+}
+
 .card .detail .description ul h4 {
   border-bottom: 1px solid #ccc;
 }
 
 .card .detail .description ul h4:not(:first-of-type) {
   margin-top: 0.8rem;
+}
+
+.card .detail .description ul h4.first {
+  margin-top: 0;
+}
+
+td.num {
+  text-align: right;
 }
 
 .selectBox {

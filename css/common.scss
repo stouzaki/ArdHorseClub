@@ -74,15 +74,29 @@ main {
       padding-bottom: 1rem;
       font-size: 0.9rem;
       ul {
+        h3 {
+          background-color: hsl(34, 50%, 80%);
+          padding-left: 0.5rem;
+          &:not(:first-of-type) {
+            margin-top: 0.8rem;
+          }
+        }
         h4 {
           border-bottom: 1px solid #ccc;
           &:not(:first-of-type) {
             margin-top: 0.8rem;
           }
+          &.first {
+            margin-top: 0;
+          }
         }
       }
     }
   }
+}
+
+td.num {
+  text-align: right;
 }
 
 .selectBox {
