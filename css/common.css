@@ -133,7 +133,16 @@ main {
   margin-top: 0;
 }
 
-td.num {
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  border: 1px solid #ccc;
+  padding: 1px 2px;
+}
+
+table td.num {
   text-align: right;
 }
 

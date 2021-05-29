@@ -95,8 +95,15 @@ main {
   }
 }
 
-td.num {
-  text-align: right;
+table {
+  border-collapse: collapse;
+  td {
+    border: 1px solid #ccc;
+    padding: 1px 2px;
+    &.num {
+      text-align: right;
+    }
+  }
 }
 
 .selectBox {
