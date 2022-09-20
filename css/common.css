@@ -135,13 +135,16 @@ main {
 
 table {
   border-collapse: collapse;
+  margin: 6px 0;
 }
 
+table th,
 table td {
   border: 1px solid #ccc;
   padding: 1px 2px;
 }
 
+table th.num,
 table td.num {
   text-align: right;
 }
